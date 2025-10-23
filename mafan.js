@@ -1,9 +1,10 @@
 class MafanFramework {
     #element;
+    #body = document.body;
 
     constructor(id) {
         this.#element = id;
-        this.#jQuery = document.createElement('script');
+        this.#jQuery = #body.createElement('script');
         this.#jQuery.src = 'https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.js';
     }
 
